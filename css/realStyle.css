@@ -202,9 +202,18 @@ header {
 	font-weight: 500;
 	font-size: 16px;
 	border-radius: 16px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	z-index: 2;
+
 }
 #boton:hover {
 	cursor: pointer;
+}
+.img-contactenos-animacion{
+	animation: contactenos 2s infinite;
+	transition: all 1s;
 }
 /* ------------------------------H2-------------------------- */
 
@@ -568,5 +577,13 @@ footer h4 {
 	100% {
 		opacity: 1;
 		transform: scale(1);
+	}
+}
+@keyframes contactenos {
+	0% {
+		transform: rotate(0.5turn);
+		}
+	100% {
+		transform: rotate(0turn);
 	}
 }

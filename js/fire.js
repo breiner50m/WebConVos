@@ -14,6 +14,14 @@ var box1_seccion4 = document.getElementById("box1-seccion4");
 var box2_seccion4 = document.getElementById("box2-seccion4");
 var lista_seccion6 = document.getElementById("lista-seccion6");
 var img_seccion6 = document.getElementById("img-seccion6");
+var img_phone = document.getElementById("img-contactenos");
+
+function phone(){
+	img_phone.classList.add("img-contactenos-animacion");
+}
+function phonedie(){
+	img_phone.classList.remove("img-contactenos-animacion");
+}
 
 function border() {
 	var mover = window.pageYOffset;
